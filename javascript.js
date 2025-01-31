@@ -1,7 +1,9 @@
 function calculate() {
 	//calculate age in age
 	var x = document.getElementById("define").value;
-	var age = 2021-x;
+	const d = new Date();
+	let year = d.getFullYear();
+	var age = year-x;
 	
 	//display calculated data
 	document.querySelector('#age_teller').innerHTML = `You are ${age} years old <br> Assuming you'll live 100 years, you have`
